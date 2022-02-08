@@ -1,8 +1,9 @@
+//Operators
+
 let a = 3;
 let b = 4;
-const c = a + b;
+let c = a + b;
 console.log(c);
-// var b = null;
 console.log(b);
 console.log("Addition", (a += b));
 console.log("SubTracTion", (a -= b));
@@ -21,8 +22,8 @@ console.log((a = b));
 //Tim hieu compare
 let ab = 8;
 let ac = "8";
-console.log("Compare ==", ab == ac);
-console.log("Compare ===", ab === ac);
+console.log("Compare ==", ab == ac); // check datatype of variable.
+console.log("Compare ===", ab === ac); //checks datatype and compares two values
 console.log("Compare !=", ab != ac);
 console.log("Compare !==", ab !== ac);
 
@@ -42,33 +43,40 @@ const auto = new Car("Black", 2022, "BMW");
 console.log(auto);
 console.log(auto instanceof Car);
 
-//su dung for
+//_________loops________
+
+//for
 const myArray = [4234, "abc", 123, "asdas", 99];
 for (let i = 0; i < myArray.length; i++) {
   const element = myArray[i];
   console.log(element);
 }
 
-//su sung while
+//while
 let text = "";
-var i = 0;
+let i = 0;
 while (i < 10) {
   console.log((text += "The number is " + i));
   i++;
 }
 
-//Su dung do while
+//do while
 let text2 = "";
-var i = 0;
+let y = 0;
 do {
-  console.log((text2 += "The number is " + i));
-  i++;
-} while (i < 10);
+  console.log((text2 += "The number is " + y));
+  y++;
+} while (y < 10);
 
-//So sanh 2 Object
-var user1 = { name: "Tuan", age: 28 };
-var user2 = { name: "Tuan", age: 28 };
-console.log(JSON.stringify(user1) === JSON.stringify(user2));
+// //Compare Object cach 1
+// const user1 = {
+//   name: "Joo",
+//   age: 28,
+//   obj1: { lastName: "Tuan", tall: undefined },
+// };
+// const user2 = { name: "Joo", age: 28, obj1: { lastName: "Tuan", tall: null } };
+// console.log("So sanh Object", JSON.stringify(user1) === JSON.stringify(user2));
+// console.log("user", JSON.stringify(user1));
 
 //Tinh tong gia tri trong mang
 const listNumber = [100, 200, 300];
@@ -91,3 +99,55 @@ console.log(x3); //String
 
 const x4 = {};
 console.log(x4); // Object
+
+//switch
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+    break;
+  default:
+    break;
+}
+console.log(day);
+
+//compare array
+
+const array1 = [2, 4, 6, 8];
+const array2 = [2, 4, 6, 10];
+
+console.log(array1.toString() === array2.toString());
+console.log(array1.toString());
+
+//if else
+let days;
+if (new Date().getDay / 2 === 0) {
+  alert("Hnay la ngay chan ! ");
+} else {
+  alert("Hnay la ngay le !");
+}
+
+//function
+
+function fcn(a, b) {
+  return a * b;
+}
+console.log(fcn(6, 7));
