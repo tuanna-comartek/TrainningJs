@@ -1,0 +1,6 @@
+List Task: 
+  Tìm hiểu floating Point
+  Ôn lại syntax
+  Setting và install ubuntu
+  So sánh Object
+  Ôn lại vòng for
