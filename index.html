@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
     <script src="test.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   </head>
   <body>
     <h1>Test</h1>
@@ -23,5 +24,26 @@
 
     const myArrays = [23123, 'Jonny', 123, 'Sara']
     document.getElementById('demo2').innerHTML = myArrays
+  </script>
+  <script>
+    //Compare Object cach 1
+    const user1 = {
+      name: 'Joo',
+      age: 28,
+      obj1: { lastName: 'Tuan', tall: null },
+    }
+    const user2 = {
+      name: 'Joo',
+      age: 28,
+      obj1: { lastName: 'Tuan', tall: null },
+    }
+    console.log(
+      'So sanh Object',
+      JSON.stringify(user1) === JSON.stringify(user2),
+    )
+    console.log('user', JSON.stringify(user1))
+
+    //Compare Object cach 2 use lodash
+    console.log('use lodash', _.isEqual(user1, user2))
   </script>
 </html>
