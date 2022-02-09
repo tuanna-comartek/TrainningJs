@@ -151,3 +151,105 @@ function fcn(a, b) {
   return a * b;
 }
 console.log(fcn(6, 7));
+//vd1
+
+// Đối với Obj hoặc Array thì được lưu dưới dạng tham chiếu,
+// có nghĩa là nó sẽ lưu địa chỉ nơi giữ giá trị của mảng hoặc obj đó.
+// Và khi mình gán một biến bất kì với biến obj hoặc array mà mình đã khai báo trước đó,
+// thì biến được ghép sẽ được coppy đỉa chỉ ô nhớ
+
+//vi du
+
+//Tham tri
+
+let a1 = 5;
+let b1 = a1; // b1 = 5
+a1 = 10;
+console.log(b1); // b1 = 5 . Dù cho a1 đã thay đổi thành 10.
+
+//tham chiếu obj
+
+const obj11 = { name: "Sala" };
+const obj12 = obj11;
+obj11.name = "Hanna";
+console.log(obj12.name); // Hanna
+
+//Truyền tham số dạng tham trị :  pass by value
+// Khi truyền tham số dạng tham trị vào trong một hàm thì thực chất trong hàm sẽ tạo ra một biến
+// rồi gán bằng tham số truyền vào và cũng do tính chất của tham trị nên trong hàm có thay đổi thế nào
+// thì giá trị truyền vào bên ngoài cũng không ảnh hưởng
+function fn1(number) {
+  number = 10;
+}
+const a12 = 5;
+// const aa = a
+fn1(a12);
+console.log(a12); // a = 5
+
+//Truyền tham số dạng tham chiếu :  pass by reference
+// Việc gán trong hàm là gán địa chỉ ô nhớ, khi thực hiện thay đổi thì giá trị của ô nhớ cũng
+// thay đổi và aa cùng chỉ đến ô nhớ đó nên khi hàm được chạy thì giá trị của aa bên ngoài
+// cũng được thay đổi theo
+function fn2(obj) {
+  obj.name = "Hanna";
+}
+const aa = { name: "Joo" };
+fn2(aa);
+console.log(aa.name); // Hanna
+
+//Ngắn gọn thì tham trị chưa giá trị(Mấy kiểu dữ liệu đơn giản )
+//Tham chiếu chứa địa chỉ (Kiểu dữ liệu phức tạp như obj or array)
+
+//Sử dung ES6 spread operator để tránh bị tham chiếu
+
+const xx = { name: "Kaka" };
+const XX1 = { ...xx };
+xx.name = "He he";
+console.log(XX1.name);
+
+const zz = [1, 2, 3];
+const zz1 = [...zz];
+zz.push(4);
+console.log(zz1);
+console.log(zz);
+
+//Example student reference
+const hs1 = { point: 7, name: "hs1" };
+const hs2 = { point: 5, name: "hs2" };
+const hs3 = { point: 9, name: "hs3" };
+const hs4 = { point: 8, name: "hs4" };
+
+const yourClass = [hs1, hs2, hs3, hs4];
+
+// const classes = yourClass;
+const HsTB = [];
+const HsK = [];
+const HsG = [];
+function xepHangHs() {
+  return yourClass.forEach((std) => {
+    if (std.point >= 5 && std.point < 7) {
+      HsTB.push(std);
+      console.log("HS trung binh la : ", std.name);
+    }
+    if (std.point >= 7 && std.point < 9) {
+      HsK.push(std);
+      console.log("HS  Kha la :", std.name);
+    }
+    if (std.point >= 9) {
+      HsG.push(std);
+      console.log("HS  Gioi la :", std.name);
+    }
+  });
+}
+xepHangHs();
+console.log("Danh sach HsTb : ", HsTB);
+console.log("Danh sach HsK : ", HsK);
+console.log("Danh sach HsG : ", HsG);
+
+hs4.point = 6;
+hs3.point = 6;
+hs2.point = 6; // Điểm số của hs2 , hs3, hs4 đã được thay đổi
+console.log("Danh sach HsTb : ", HsTB);
+console.log("Danh sach HsK : ", HsK);
+console.log("Danh sach HsG : ", HsG);
+console.log(yourClass);
