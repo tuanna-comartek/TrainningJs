@@ -175,6 +175,9 @@ obj11.name = "Hanna";
 console.log(obj12.name); // Hanna
 
 //Truyền tham số dạng tham trị :  pass by value
+// Khi truyền tham số dạng tham trị vào trong một hàm thì thực chất trong hàm sẽ tạo ra một biến
+// rồi gán bằng tham số truyền vào và cũng do tính chất của tham trị nên trong hàm có thay đổi thế nào
+// thì giá trị truyền vào bên ngoài cũng không ảnh hưởng
 function fn1(number) {
   number = 10;
 }
@@ -184,6 +187,9 @@ fn1(a12);
 console.log(a12); // a = 5
 
 //Truyền tham số dạng tham chiếu :  pass by reference
+// Việc gán trong hàm là gán địa chỉ ô nhớ, khi thực hiện thay đổi thì giá trị của ô nhớ cũng
+// thay đổi và aa cùng chỉ đến ô nhớ đó nên khi hàm được chạy thì giá trị của aa bên ngoài
+// cũng được thay đổi theo
 function fn2(obj) {
   obj.name = "Hanna";
 }
