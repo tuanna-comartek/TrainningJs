@@ -7,7 +7,57 @@
     <title>Document</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  
+  <script>
+    function getUserAccount4() {
+      return axios.get('https://jsonplaceholder.typicode.com/users')
+    }
+    function getUserPermissions5() {
+      return axios.get('https://jsonplaceholder.typicode.com/users')
+    }
+    axios.all([getUserAccount4(), getUserPermissions5()]).then(
+      axios.spread(function (res1, res2) {
+        document.getElementById('id').innerHTML = JSON.stringify(
+          res1.data[0].name,
+        )
+        document.getElementById('name').innerHTML = JSON.stringify(
+          res1.data[0].id,
+        )
+        document.getElementById('address').innerHTML = JSON.stringify(
+          res1.data[0].address.city,
+        )
+        console.log(res2)
+      }),
+    )
+  </script>
+  <body>
+    <h1>Example</h1>
+    <p id="data"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <p class="mnm"></p>
+    <div>
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Address</th>
+        </tr>
+        <tr>
+          <td><p id="id"></p></td>
+          <td><p id="name"></p></td>
+          <td><p id="address"></p></td>
+        </tr>
+      </table>
+    </div>
+    <p id="data1"></p>
   </body>
   <script src="ExamplePromise.js"></script>
 </html>
