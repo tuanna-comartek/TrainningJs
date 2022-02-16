@@ -195,3 +195,8 @@ function Spinner() {
     .finally(stopAnimation);
 }
 Spinner();
+
+function fh() {
+  console.log(Math.random());
+}
+fh();
