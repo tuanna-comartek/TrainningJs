@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Helvatica-light';
+  src: url(common/font/Helvetica/helvetica-neue-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Helvatica-bold';
+  src: url(common/font/Helvetica/helvetica-neue-bold.ttf);
+}
+
+@font-face {
+  font-family: 'Helvatica-medium';
+  src: url(common/font/Helvetica/helvetica-neue-medium.ttf);
+}
+
+@font-face {
+  font-family: 'Helvatica-regular';
+  src: url(common/font/Helvetica/helvetica-neue-regular.ttf);
+}
+
+@font-face {
+  font-family: 'Helvatica';
+  src: url(common/font/Helvetica/HelveticaNeue.otf);
+}
+/*# sourceMappingURL=font.css.map */
