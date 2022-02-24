@@ -1,13 +1,11 @@
 @import url(font.css);
 body{
-    margin: 0 auto;
     font-family: 'Helvatica';
+    margin: 0;
     #header{
         max-width: 1170px;
         margin: 0 auto;
-        // width: 82.5%;
         height: 93px;
-        // margin-left: 125px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,18 +30,14 @@ body{
                         color: #070707;
                         display: inline-block;
                         font-size: 14px;
-                        font-weight: bolder;
-                        // font-family: 'helvetica-neue-bold';
+                        font-family: 'Helvatica-bold';
+                        line-height: 24px;
                     }
                     img{
                         width: 14px;
                     }
                     a:hover{
-                       
                         color: #0090FF;
-                        // span{
-                        //     color: #fff;
-                        // }
                     }
                     span{
                         opacity: 50%; 
@@ -98,10 +92,8 @@ body{
                 }
             }
         }
-        
     }
     #main{
-        
         .content-1{
             display: grid;
             grid-template-columns: 670px 242.5px 242.5px;
@@ -146,7 +138,6 @@ body{
                 .img-img:not(:hover){
                     transition: 2s;
                 }
-                
             }
             .item-3{
                 grid-column: 2/3;
@@ -167,7 +158,6 @@ body{
                     font-size: 16px; 
                     line-height: 24px;
                 }
-                
             }
             .item-4{
                 grid-column: 3/4;
@@ -188,7 +178,6 @@ body{
                     font-size: 16px; 
                     line-height: 24px;
                 }
-
             }
             .shadow{
                 position: absolute;
@@ -208,8 +197,7 @@ body{
             }
         }
         .section-2{
-            width: 82.5%;
-            margin-left: 130px;
+            padding-left: 15px;
             max-width: 1170px;
             margin: 0 auto;
             padding-bottom: 40px;
@@ -259,8 +247,7 @@ body{
             }
         }
         .section-3{
-            width: 82.5%;
-            margin-left: 130px;
+            padding-left: 15px;
             display: flex;
             max-width: 1170px;
             margin: 0 auto;
@@ -753,8 +740,7 @@ body{
         width: 100%;
         background-color: #1F2333; 
         .section-footer{
-            width: 82.5%;
-            margin-left: 120px;
+            padding-left: 15px;
             color: #fff;height: 300px; 
             display: flex;
             max-width: 1170px;
@@ -765,6 +751,9 @@ body{
                 padding-top: 20px;
                 p{
                     margin: 0;
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: #E1E1E1;
                 }
             }
             .content{
@@ -782,15 +771,21 @@ body{
                         list-style-type: none;
 
                         li{
-                            padding-top: 20px;
+                            font-size: 13px;
+                            line-height: 32px;
+                            color: #AAABAF;
                         }
                         .first-li{
                             display: flex;
+                            font-size: 13px;
+                            line-height: 32px;
+                            color: #fff;
+
                             .first-li-btn{
                                 height: 5px; 
                                 width: 4px; 
                                 background-color: #0090FF;
-                                margin-top: 7px; 
+                                margin-top: 13px; 
                                 margin-right: 4px;
                             }
                         }
@@ -804,10 +799,12 @@ body{
             text-align: center; 
             justify-content: center; 
             align-items: center; 
-            line-height: 30px;
-            h5{
+            p{
                 margin: 0;
                 color: #fff;
+                font-size: 12px;
+                line-height: 24px;
+                padding-top: 4px;
             }
         }
     }
