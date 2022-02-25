@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    .section-header{
+        .container-header{
+            // display: flex;
+            width: 100%;
+            .section-header-left{
+                display: flex;
+                width: 30%;
+                float: left;
+                h1{
+                    width: 60%;
+                }
+                span{
+                    width: 40%;
+                }
+            }
+            .section-header-right{
+                width: 70%;
+                float: right;
+                ul{
+                    float: right;
+                    display: flex;
+                    li{
+                        list-style-type: none;
+                        padding-right: 10px;
+                        a{
+                            text-decoration: none;
+                        }
+                        input{
+                            border-radius: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-nav{
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                padding-left: 20px;
+                a{
+                text-decoration: none;
+                }
+                a:hover{
+                text-decoration: underline;
+                color: red;
+                // font-size: 120%;
+                }
+            }
+        }
+    }
+    #main{
+        .section-content{
+            width: 100%;
+            display: flex;
+            .content-left{
+                padding: 5px;
+                width: 25%;
+                border: solid 1px rgb(206, 203, 203);
+                margin: 2px;
+                img{
+                    width: 100%;
+                }
+            }
+            .content-center{
+                padding: 5px;
+                width: 50%;
+                border: solid 1px rgb(206, 203, 203);
+                margin: 2px;
+                img{
+                    width: 100%;
+                }
+
+            }
+            .content-right{
+                padding: 5px;
+                width: 25%;
+                border: solid 1px rgb(206, 203, 203);
+                margin: 2px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

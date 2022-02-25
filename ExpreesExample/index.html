@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="img/png"
+      href="https://comartek.com/wp-content/uploads/2020/12/favicon.png"
+    />
+    <title>Coppy Exprees</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="section-header">
+      <div class="container-header">
+        <div class="section-header-left">
+          <h1 class="logo" style="margin: 0;">
+            <a href="https://comartek.com">
+              <img
+                height="30px"
+                width=" 150px"
+                src="https://comartek.com/wp-content/uploads/2021/07/concept_logo-web.png"
+              />
+            </a>
+          </h1>
+          <span id="date-time"></span>
+        </div>
+        <div class="section-header-right">
+          <ul class="header" style="display: flex;">
+            <li class="item-header"><a href="#">Login</a></li>
+            <li class="item-header">
+              <input
+                class="search-input"
+                placeholder="Tìm kiếm tin tức .... "
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav class="section-nav">
+      <ul class="navbar">
+        <li class="item-nav"><a href="#">Home</a></li>
+        <li class="item-nav"><a href="#">Home</a></li>
+        <li class="item-nav"><a href="#">Home</a></li>
+        <li class="item-nav"><a href="#">Home</a></li>
+        <li class="item-nav"><a href="#">Home</a></li>
+      </ul>
+    </nav>
+    <hr style="width: 80%;" />
+    <main id="main">
+      <section class="section-content">
+        <div class="content-left">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/02/18/mua-giong-crop-1645174493540.jpeg"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+            quidem, illum aut quae impedit eaque deleniti nostrum perspiciatis
+            itaque quia necessitatibus quasi iste consectetur dolorem similique.
+            Quae eligendi rem obcaecati.
+          </p>
+        </div>
+        <div class="content-center">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/02/18/mua-giong-crop-1645174493540.jpeg"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+            quidem, illum aut quae impedit eaque deleniti nostrum perspiciatis
+            itaque quia necessitatibus quasi iste consectetur dolorem similique.
+            Quae eligendi rem obcaecati.
+          </p>
+        </div>
+        <div class="content-right">
+          <img
+            src="https://icdn.dantri.com.vn/thumb_w/770/2022/02/18/mua-giong-crop-1645174493540.jpeg"
+          />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+            quidem, illum aut quae impedit eaque deleniti nostrum perspiciatis
+            itaque quia necessitatibus quasi iste consectetur dolorem similique.
+            Quae eligendi rem obcaecati.
+          </p>
+        </div>
+      </section>
+      <section class="section-content-1"></section>
+    </main>
+    <footer>
+      <p>This is footer</p>
+    </footer>
+  </body>
+  <script>
+    const date = new Date()
+    console.log(date)
+    document.getElementById('date-time').innerHTML = date.toDateString()
+  </script>
+</html>

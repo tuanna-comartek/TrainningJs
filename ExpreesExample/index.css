@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+}
+
+body .section-header .container-header {
+  width: 100%;
+}
+
+body .section-header .container-header .section-header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  float: left;
+}
+
+body .section-header .container-header .section-header-left h1 {
+  width: 60%;
+}
+
+body .section-header .container-header .section-header-left span {
+  width: 40%;
+}
+
+body .section-header .container-header .section-header-right {
+  width: 70%;
+  float: right;
+}
+
+body .section-header .container-header .section-header-right ul {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-header .container-header .section-header-right ul li {
+  list-style-type: none;
+  padding-right: 10px;
+}
+
+body .section-header .container-header .section-header-right ul li a {
+  text-decoration: none;
+}
+
+body .section-header .container-header .section-header-right ul li input {
+  border-radius: 8px;
+}
+
+body .section-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-nav ul li {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+body .section-nav ul li a {
+  text-decoration: none;
+}
+
+body .section-nav ul li a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+body #main .section-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #main .section-content .content-left {
+  padding: 5px;
+  width: 25%;
+  border: solid 1px #cecbcb;
+  margin: 2px;
+}
+
+body #main .section-content .content-left img {
+  width: 100%;
+}
+
+body #main .section-content .content-center {
+  padding: 5px;
+  width: 50%;
+  border: solid 1px #cecbcb;
+  margin: 2px;
+}
+
+body #main .section-content .content-center img {
+  width: 100%;
+}
+
+body #main .section-content .content-right {
+  padding: 5px;
+  width: 25%;
+  border: solid 1px #cecbcb;
+  margin: 2px;
+}
+
+body #main .section-content .content-right img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
