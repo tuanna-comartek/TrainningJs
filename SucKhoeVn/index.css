@@ -308,7 +308,7 @@ body #main .section-2 .title .title-btn {
   width: 15px;
   height: 15px;
   background-color: #0090FF;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 body #main .section-2 .title .title-tl {
@@ -318,6 +318,8 @@ body #main .section-2 .title .title-tl {
 
 body #main .section-2 .title .title-tl h2 {
   margin: 0;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 body #main .section-2 .videos {
@@ -325,11 +327,13 @@ body #main .section-2 .videos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body #main .section-2 .videos .video {
-  width: 25%;
-  padding-right: 30px;
+  width: 23%;
 }
 
 body #main .section-2 .videos .video p {
@@ -339,22 +343,6 @@ body #main .section-2 .videos .video p {
 }
 
 body #main .section-2 .videos .video span {
-  font-size: 12px;
-  line-height: 20px;
-  color: #9B9B9B;
-}
-
-body #main .section-2 .videos .video-last {
-  width: 25%;
-}
-
-body #main .section-2 .videos .video-last p {
-  font-size: 15px;
-  line-height: 20px;
-  margin-top: 0;
-}
-
-body #main .section-2 .videos .video-last span {
   font-size: 12px;
   line-height: 20px;
   color: #9B9B9B;

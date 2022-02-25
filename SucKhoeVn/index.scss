@@ -214,21 +214,25 @@ body{
                     width: 15px; 
                     height: 15px; 
                     background-color: #0090FF;
-                    margin-top: 8px;
+                    margin-top: 2px;
                 }
                 .title-tl{
                     padding-left: 10px; 
                     font-weight: bold;
                     h2{
-                        margin: 0;}
+                        margin: 0;
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
                 }
             }
             .videos{
                 width: 100%; 
                 display: flex;
+                justify-content: space-between;
                 .video{
-                    width: 25%; 
-                    padding-right: 30px;
+                    width: 23%; 
+                    // padding-right: 30px;
                     p{
                         margin-top: 0;
                         font-size: 15px;
@@ -240,19 +244,20 @@ body{
                         color: #9B9B9B;
                     }
                 }
-                .video-last{
-                    width: 25%; 
-                    p{
-                        font-size: 15px;
-                        line-height: 20px;
-                        margin-top: 0;
-                    }
-                    span{
-                        font-size: 12px;
-                        line-height: 20px;
-                        color: #9B9B9B
-                    }
-                }
+                // .video-last{
+                //     width: 25%;
+                //     height: 100%; 
+                //     p{
+                //         font-size: 15px;
+                //         line-height: 20px;
+                //         margin-top: 0;
+                //     }
+                //     span{
+                //         font-size: 12px;
+                //         line-height: 20px;
+                //         color: #9B9B9B
+                //     }
+                // }
             }
         }
         .section-3{
