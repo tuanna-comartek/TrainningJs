@@ -1,0 +1,60 @@
+.title-trending {
+  height: 35px;
+  background-color: #EDEDED;
+  padding-bottom: 5px;
+}
+
+.title-trending .section-trending {
+  margin: 0 auto;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+.title-trending .section-trending .title {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title-trending .section-trending .title .trending {
+  height: 12px;
+  opacity: 100%;
+  color: black;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-trending .section-trending .title .btn {
+  line-height: 20px;
+}
+
+.title-trending .section-trending .title .text {
+  opacity: 50%;
+  line-height: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-trending .section-trending .btn-next {
+  line-height: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title-trending .section-trending .btn-next a {
+  padding-right: 5px;
+  padding-bottom: 4px;
+}
+/*# sourceMappingURL=title.css.map */
