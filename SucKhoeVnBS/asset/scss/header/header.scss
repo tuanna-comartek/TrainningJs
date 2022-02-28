@@ -1,0 +1,75 @@
+// #header{
+//     // min-width: 1170px;
+//     width: 100%;
+//     margin: 0 auto;
+//     height: 93px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     h1{
+//         width: 14%;
+//     }
+//     .navbar{
+//         width: 100%;
+//         line-height: 55px;
+//         height: 100%;
+//         ul{
+//             padding-left: 30px;
+//             display: flex; 
+//             justify-content: space-between;
+//             margin: 0;
+//             height: 100%;
+//             li{
+//                 padding-top: 15px;
+//                 list-style-type: none;
+//                 padding-right: 3px;
+//                 a{
+//                     text-decoration: none;
+//                     color: #070707;
+//                     display: inline-block;
+//                     font-size: 14px;
+//                     font-family: 'Helvatica-bold';
+//                     line-height: 24px;
+//                 }
+//                 img{
+//                     width: 14px;
+//                 }
+//                 a:hover{
+//                     color: #0090FF;
+//                 }
+//                 span{
+//                     opacity: 50%; 
+//                     padding-left: 15px;
+//                     padding-right: 15px;
+//                 }
+//             }
+//             .first-li:hover{
+//                 box-shadow: inset 0 2px #0090FF;
+//             }
+//         }
+//     }
+// }
+
+#header{
+    nav{
+        .navbar-content{
+            .navbar-content-items{
+                justify-content: space-between !important;
+                padding-left: 20px;
+                .item{
+                    a{
+                        span{
+                            border-right: 1px solid rgb(187, 185, 185);
+                            padding-right: 25px;
+                            
+                        }
+                    }
+                    a:hover{
+                        color: #0090FF;
+                        // box-shadow: inset 0 2px #0090FF
+                    }
+                }
+            }
+        }
+    }
+}

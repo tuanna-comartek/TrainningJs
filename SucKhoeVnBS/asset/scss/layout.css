@@ -1,0 +1,29 @@
+@import url(footer/footer.css);
+@import url(header/header.css);
+@import url(main/main.css);
+@import url(title/title.css);
+@import url(font/font.css);
+body {
+  font-family: 'Helvatica' !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  #title-trending {
+    display: none;
+  }
+  .img-img {
+    width: 505px  !important;
+    height: 321px !important;
+  }
+  .navbar-content-items .item a span {
+    border-right: none !important;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

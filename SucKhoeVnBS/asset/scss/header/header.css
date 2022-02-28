@@ -1,0 +1,16 @@
+#header nav .navbar-content .navbar-content-items {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  padding-left: 20px;
+}
+
+#header nav .navbar-content .navbar-content-items .item a span {
+  border-right: 1px solid #bbb9b9;
+  padding-right: 25px;
+}
+
+#header nav .navbar-content .navbar-content-items .item a:hover {
+  color: #0090FF;
+}
+/*# sourceMappingURL=header.css.map */

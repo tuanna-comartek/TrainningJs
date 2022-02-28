@@ -1,0 +1,42 @@
+.title-trending{
+    height: 35px;
+    background-color: #EDEDED;
+    padding-bottom: 5px;
+    .section-trending{
+        margin: 0 auto;
+        font-size: 11px;
+        line-height: 22px;
+        .title{
+            float: left; 
+            display: flex;
+            .trending{
+                height: 12px;
+                opacity: 100%;
+                color: black;
+                font-weight: bold;
+                padding-left: 10px;
+                padding-right: 10px;
+                line-height: 35px;
+                align-items: center;
+            }
+            .btn{
+                line-height: 20px;
+            }
+            .text{
+                opacity: 50%;
+                line-height: 35px;
+                align-items: center;
+            }
+        }
+        .btn-next{
+            line-height: 35px;
+            align-items: center;
+            float: right;
+            display: flex;
+            a{
+                padding-right: 5px;
+                padding-bottom: 4px;
+            }
+        }
+    }
+}
