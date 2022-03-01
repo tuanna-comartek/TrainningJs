@@ -1,32 +1,96 @@
 @import url(font/font.css);
+#main {
+  --bs-gutter-x: 20px;
+}
+
 #main .section-1 {
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 0;
   padding-right: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 #main .section-1 .item-1 {
+  padding-bottom: 30px;
+}
+
+#main .section-1 .item-1 .item-1-content {
   position: relative;
   overflow: hidden;
 }
 
-#main .section-1 .item-2 {
-  position: relative;
-  overflow: hidden;
+#main .section-1 .item-1 .item-1-content p {
+  font-size: 20px;
+  line-height: 30px;
 }
 
-#main .section-1 .item-2 .img-img {
+#main .section-1 .item-1 .shadow {
   width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1D1D1D), to(transparent));
+  background-image: linear-gradient(to top, #1D1D1D, transparent);
+}
+
+#main .section-1 .item-1 .text-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 30px;
+}
+
+#main .section-1 .item-2 .item-2-parent .item-2-1 {
+  padding-bottom: 31px;
+}
+
+#main .section-1 .item-2 .item-2-parent .item-2-1 .item2-1-content {
+  position: relative;
+  overflow: hidden;
+  margin: o auto;
+}
+
+#main .section-1 .item-2 .item-2-parent .item-2-1 .item2-1-content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#main .section-1 .item-2 .item-2-parent .item-2-1 .item2-1-content .shadow-1 {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1D1D1D), to(transparent));
+  background-image: linear-gradient(to top, #1D1D1D, transparent);
+}
+
+#main .section-1 .item-2 .item-2-parent .item-2-1 .item2-1-content .text-shadow-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 30px;
 }
 
 #main .section-1 .item-2 .item-3 {
   position: relative;
   overflow: hidden;
+  padding-bottom: 30px;
+}
+
+#main .section-1 .item-2 .item-3 p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 #main .section-1 .item-2 .item-3 .img-img {
@@ -34,8 +98,24 @@
   height: auto;
 }
 
-#main .section-1 .item-2 .item-3 p {
+#main .section-1 .item-2 .item-3 .shadow-3 {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1D1D1D), to(transparent));
+  background-image: linear-gradient(to top, #1D1D1D, transparent);
+}
+
+#main .section-1 .item-2 .item-3 .text-shadow-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
   font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   line-height: 24px;
 }
 
@@ -44,19 +124,40 @@
   overflow: hidden;
 }
 
-#main .section-1 .item-2 .item-4 .img-img {
-  width: 100%;
-  height: auto;
-}
-
 #main .section-1 .item-2 .item-4 p {
   font-size: 16px;
   line-height: 24px;
 }
 
+#main .section-1 .item-2 .item-4 .img-img {
+  width: 100%;
+  height: auto;
+}
+
+#main .section-1 .item-2 .item-4 .shadow-4 {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1D1D1D), to(transparent));
+  background-image: linear-gradient(to top, #1D1D1D, transparent);
+}
+
+#main .section-1 .item-2 .item-4 .text-shadow-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 24px;
+}
+
 #main .section-2 {
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 #main .section-2 .title {
@@ -84,12 +185,27 @@
   line-height: 20px;
 }
 
-#main .section-2 .content-videos .content-videos-item p {
+#main .section-2 .content-videos .content-videos-item {
+  padding-bottom: 20px;
+}
+
+#main .section-2 .content-videos .content-videos-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#main .section-2 .content-videos .content-videos-item a h4 {
   padding-top: 10px;
   margin-top: 0;
   font-size: 15px;
   line-height: 20px;
   font-family: 'Helvatica-medium' !important;
+  color: #000000;
+  font-weight: normal;
+}
+
+#main .section-2 .content-videos .content-videos-item a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-2 .content-videos .content-videos-item span {
@@ -127,11 +243,20 @@
   height: 30px;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-1 .content-1-item p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-1 .content-1-item a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-1 .content-1-item a h4 {
   font-size: 15px;
   line-height: 20px;
   margin-top: 7px;
   margin-bottom: 7px;
+  color: #000000;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-1 .content-1-item a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-1 .content-1-item span {
@@ -176,14 +301,31 @@
   line-height: 20px;
 }
 
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-header ul li a {
+  text-decoration: none;
+  color: #1D1D1D;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-header ul li a:hover {
+  color: #0090FF;
+}
+
 #main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-1 img {
   padding-bottom: 15px;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-1 p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-1 a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-1 a h4 {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-1 a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-1 span {
@@ -192,11 +334,19 @@
   color: #3C3C3C;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-2 .content-2-content-item-2-text p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-2 .content-2-content-item-2-text a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-2 .content-2-content-item-2-text a h4 {
   font-size: 14px;
   line-height: 22px;
   color: #3C3C3C;
   margin-bottom: 0;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-2 .content-2-content-item-2-text a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-content .content-2-content-item-2 .content-2-content-item-2-text span {
@@ -235,11 +385,17 @@
   margin: 0;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-header ul li {
+#main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-header ul li a {
+  text-decoration: none;
   padding-right: 10px;
+  padding-left: 10px;
   font-size: 13px;
   line-height: 22px;
   color: #1D1D1D;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-header ul li a:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-1 .content-3-1-item {
@@ -250,10 +406,18 @@
   padding-bottom: 10px;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-1 .content-3-1-item p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-1 .content-3-1-item a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-1 .content-3-1-item a h4 {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-1 .content-3-1-item a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-4 {
@@ -285,17 +449,35 @@
   margin: 0;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-header li {
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-header li a {
+  text-decoration: none;
   padding-right: 10px;
+  padding-left: 10px;
   font-size: 13px;
   line-height: 22px;
   color: #1D1D1D;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-1 p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-header li a:hover {
+  color: #0090FF;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-1 img {
+  padding-bottom: 7px;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-1 a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-1 a h4 {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-1 a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-1 span {
@@ -304,11 +486,19 @@
   color: #3C3C3C;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-2 .text p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-2 .text a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-2 .text a h4 {
   font-size: 14px;
   line-height: 22px;
   color: #3C3C3C;
   margin: 0;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-2 .text a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-content .content-4-content-item-2 .text span {
@@ -325,10 +515,19 @@
   padding-right: 30px;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 a h4 {
   font-size: 15px;
   line-height: 20px;
   margin-top: 7px;
+  color: #000000;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 img {
@@ -361,11 +560,19 @@
   padding-left: 10px;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 .content-5-item-content .text p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 .content-5-item-content .text a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 .content-5-item-content .text a h4 {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: #3C3C3C;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 .content-5-item-content .text a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-5 .content-5-item-1 .content-5-item-content .text span {
@@ -397,18 +604,32 @@
   list-style-type: none;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-header li {
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-header li a {
+  text-decoration: none;
   padding-right: 10px;
+  padding-left: 10px;
   font-size: 13px;
   line-height: 22px;
   color: #1D1D1D;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-left p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-header li a:hover {
+  color: #0090FF;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-left a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-left a h4 {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
   padding-top: 7px;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-left a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-left span {
@@ -421,10 +642,19 @@
   padding-bottom: 15px;
 }
 
-#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-right .content-6-content-right-1 p {
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-right .content-6-content-right-1 a {
+  text-decoration: none;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-right .content-6-content-right-1 a h4 {
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+  margin: 0;
+}
+
+#main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-right .content-6-content-right-1 a h4:hover {
+  color: #0090FF;
 }
 
 #main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-content-right .content-6-content-right-1 span {
