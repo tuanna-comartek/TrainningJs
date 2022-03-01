@@ -45,8 +45,10 @@ body{
 }
 
 @media screen and (max-width: 575px) {
-    #main{
-        .section-3{
+    body{
+        // font-size: 50%;
+        #main{
+            .section-3{
             .section-3-contents{
                 .section-3-left-contents{
                     .content-2{
@@ -80,5 +82,6 @@ body{
                 }
             }
         }
+    }
     }
 }

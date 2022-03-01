@@ -1,11 +1,12 @@
 @import url(font/font.css);
 
 #main{
+    padding-top: 30px;
     --bs-gutter-x: 20px;
     .section-1{
         margin: 0 auto;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         padding-left: 0;
         padding-right: 0;
         .item-1{
@@ -48,8 +49,9 @@
         .item-2{
             .item-2-parent{
                 .item-2-1{
-                    padding-bottom: 31px;
+                    padding-bottom: 23px;
                     .item2-1-content{
+                        padding-bottom: 10px;
                         position: relative;
                         overflow: hidden;
                         margin: o auto;
@@ -211,7 +213,7 @@
                 a{
                     text-decoration: none;
                     color: #000000;
-                    h4{
+                    h3{
                         padding-top: 10px;
                         margin-top: 0;
                         font-size: 15px;
@@ -220,7 +222,7 @@
                         color: #000000;
                         font-weight: normal;
                     }
-                    h4:hover{
+                    h3:hover{
                         color: #0090FF;
                     }
                 }
@@ -254,20 +256,20 @@
                             left: 0; 
                             font-size: 12px; 
                             line-height: 20px;
-                            margin-left: 13px;
+                            margin-left: 12px;
                             width: 70px;
                             height: 30px;
                         }
                         a{
                             text-decoration: none;
-                            h4{
+                            h3{
                                 font-size: 15px;
                                 line-height: 20px;
                                 margin-top: 7px;
                                 margin-bottom: 7px;
                                 color: #000000;
                             }
-                            h4:hover{
+                            h3:hover{
                                 color: #0090FF;
                             }
                         }
@@ -315,17 +317,18 @@
                     }
                     .content-2-content{
                         .content-2-content-item-1{
+                            padding-bottom: 10px;
                             img{
                                 padding-bottom: 15px;
                             }
                             a{
                                 text-decoration: none;
-                                h4{
+                                h3{
                                     font-size: 15px;
                                     line-height: 20px;
                                     color: #000000;
                                 }
-                                h4:hover{
+                                h3:hover{
                                     color: #0090FF;
                                 }
                             }
@@ -336,27 +339,31 @@
                             }
                         }
                         .content-2-content-item-2{
-                            .content-2-content-item-2-img{
-
-                            }
-                            .content-2-content-item-2-text{
-                                a{
-                                    text-decoration: none;
-                                    h4{
-                                        font-size: 14px;
-                                        line-height: 22px;
-                                        color: #3C3C3C;
-                                        margin-bottom: 0;
-                                    }
-                                    h4:hover{
-                                        color: #0090FF;
-                                    }
+                            .content-2-content-item-2-1{
+                                padding-bottom: 15px;
+                                .content-2-content-item-2-img{
+    
                                 }
-                                span{
-                                    font-size: 12px;
-                                    line-height: 24px;
-                                    color: #9B9B9B;
-                                }   
+                                .content-2-content-item-2-text{
+                                    margin-top: -4px;
+                                    a{
+                                        text-decoration: none;
+                                        h3{
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            color: #3C3C3C;
+                                            margin-bottom: 0;
+                                        }
+                                        h3:hover{
+                                            color: #0090FF;
+                                        }
+                                    }
+                                    span{
+                                        font-size: 12px;
+                                        line-height: 24px;
+                                        color: #9B9B9B;
+                                    }   
+                                }
                             }
                         }
                     }
@@ -405,12 +412,12 @@
                             }
                             a{
                                 text-decoration: none;
-                                h4{
+                                h3{
                                     font-size: 15px;
                                     line-height: 20px;
                                     color: #000000;
                                 }
-                                h4:hover{
+                                h3:hover{
                                     color: #0090FF;
                                 }
                             }
@@ -455,17 +462,18 @@
                     }
                     .content-4-content{
                         .content-4-content-item-1{
+                            padding-bottom: 15px;
                             img{
                                 padding-bottom: 7px;
                             }
                             a{
                                 text-decoration: none;
-                                h4{
+                                h3{
                                     font-size: 15px;
                                     line-height: 20px;
                                     color: #000000;
                                 }
-                                h4:hover{
+                                h3:hover{
                                     color: #0090FF;
                                 }
                             }
@@ -476,23 +484,27 @@
                             }
                         }
                         .content-4-content-item-2{
-                            .text{
-                                a{
-                                    text-decoration: none;
-                                    h4{
-                                        font-size: 14px;
-                                        line-height: 22px;
-                                        color: #3C3C3C;
-                                        margin: 0;
+                            .content-4-content-item-2-1{
+                                padding-bottom: 15px;
+                                .text{
+                                    margin-top: -4px;
+                                    a{
+                                        text-decoration: none;
+                                        h3{
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            color: #3C3C3C;
+                                            margin: 0;
+                                        }
+                                        h3:hover{
+                                            color: #0090FF;
+                                        }
                                     }
-                                    h4:hover{
-                                        color: #0090FF;
+                                    span{
+                                        font-size: 12px;
+                                        line-height: 24px;
+                                        color: #9B9B9B;
                                     }
-                                }
-                                span{
-                                    font-size: 12px;
-                                    line-height: 24px;
-                                    color: #9B9B9B;
                                 }
                             }
                         }
@@ -503,13 +515,13 @@
                     .content-5-item-1{
                         a{
                             text-decoration: none;
-                            h4{
+                            h3{
                                 font-size: 15px;
                                 line-height: 20px;
                                 margin-top: 7px;
                                 color: #000000;
                             }
-                            h4:hover{
+                            h3:hover{
                                 color: #0090FF;
                             }
                         }
@@ -540,13 +552,13 @@
                                 padding-left: 10px;
                                 a{
                                     text-decoration: none;
-                                    h4{
+                                    h3{
                                         margin: 0;
                                         font-size: 14px;
                                         line-height: 20px;
                                         color: #3C3C3C;
                                     }
-                                    h4:hover{
+                                    h3:hover{
                                         color: #0090FF;
                                     }
                                 }
@@ -595,13 +607,13 @@
                     .content-6-content-left{
                         a{
                             text-decoration: none;
-                            h4{
+                            h3{
                                 font-size: 15px;
                                 line-height: 20px;
                                 color: #000000;
                                 padding-top: 7px;
                             }
-                            h4:hover{
+                            h3:hover{
                                 color: #0090FF;
                             }
                         }
@@ -616,13 +628,13 @@
                             padding-bottom: 15px;
                             a{
                                 text-decoration: none;
-                                h4{
+                                h3{
                                     font-size: 14px;
                                     line-height: 20px;
                                     color: #000000;
                                     margin: 0;
                                 }
-                                h4:hover{
+                                h3:hover{
                                     color: #0090FF;
                                 }
                             }
@@ -656,7 +668,7 @@
                     }
                 }
                 .tin-moi-nhat{
-                    padding-bottom: 11px;
+                    padding-bottom: 20px;
                     img{
                         padding-bottom: 11px;
                     }
