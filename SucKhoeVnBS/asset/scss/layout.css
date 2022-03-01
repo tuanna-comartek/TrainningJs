@@ -33,16 +33,16 @@ body {
 }
 
 @media screen and (max-width: 575px) {
-  #main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-header ul {
+  body #main .section-3 .section-3-contents .section-3-left-contents .content-2 .content-2-header ul {
     display: none;
   }
-  #main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-header ul {
+  body #main .section-3 .section-3-contents .section-3-left-contents .content-3 .content-3-header ul {
     display: none;
   }
-  #main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-header ul {
+  body #main .section-3 .section-3-contents .section-3-left-contents .content-4 .content-4-header ul {
     display: none;
   }
-  #main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-header ul {
+  body #main .section-3 .section-3-contents .section-3-left-contents .content-6 .content-6-header ul {
     display: none;
   }
 }
