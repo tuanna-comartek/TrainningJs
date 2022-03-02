@@ -3,6 +3,7 @@
 @import url(main/main.css);
 @import url(title/title.css);
 @import url(font/font.css);
+@import url(quangcao/quangcao.css);
 body{
     font-family: 'Helvatica' !important;
 }
@@ -52,6 +53,35 @@ body{
         }
     }
 }
+@media screen and (max-width: 575px) {
+    #main{
+        
+        .section-3{
+
+            .section-3-contents{
+                .adss{
+                    display: block;
+                    position: fixed;
+                    z-index: 99999;
+                    top: 0;
+                    left: 0;
+                    height: 30px;
+                    width: 200px;
+                }
+                .section-3-right-contents{
+                    position: fixed;
+                    z-index: 99999;
+                    top: 30px;
+                    left: 0;
+                    background-color: aqua;
+
+
+                }
+            }   
+        } 
+    } 
+}
+
 
 @media screen and (max-width: 575px) {
     body{

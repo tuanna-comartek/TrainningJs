@@ -2,13 +2,14 @@
   height: 35px;
   background-color: #EDEDED;
   padding-bottom: 5px;
-  padding-top: 89px;
+  padding-top: 80px;
 }
 
 .title-trending .section-trending {
   margin: 0 auto;
   font-size: 11px;
   line-height: 22px;
+  padding-right: 20px;
 }
 
 .title-trending .section-trending .title {

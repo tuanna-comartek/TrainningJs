@@ -1,0 +1,22 @@
+.quang-cao {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.3);
+  z-index: 88888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quang-cao .img-ads {
+  display: inline-grid;
+}
+
+.quang-cao .img-ads img {
+  width: 400px;
+  height: 300px;
+}
+
+/*# sourceMappingURL=quangcao.css.map */
