@@ -4,10 +4,11 @@
 
 #footer .section-footer {
   max-width: 1374px;
-  padding: 20px;
+  padding-top: 20px;
   color: #fff;
   height: auto;
   margin: 0 auto;
+  padding-left: 64px;
 }
 
 #footer .section-footer .info p {

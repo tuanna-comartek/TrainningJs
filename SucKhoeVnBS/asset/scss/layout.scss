@@ -32,7 +32,16 @@ body{
         }
     }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 992px) {
+    #main{
+        .section-1{
+            .item-2-1{
+                padding-bottom: 25px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
     .navbar-content-items{
         .item{
             a{
