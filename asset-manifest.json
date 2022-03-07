@@ -1,16 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.b06731bc.css",
-    "main.js": "./static/js/main.bea52e37.js",
-    "static/media/item8.png": "./static/media/item8.c304bd5752b08f852d8d.png",
-    "static/media/sports-731506__340.png": "./static/media/sports-731506__340.ae4a2a4d4e99acd913a7.png",
-    "static/media/item9.png": "./static/media/item9.7351cce5df2db94405f4.png",
+    "main.js": "./static/js/main.94468986.js",
     "index.html": "./index.html",
     "main.b06731bc.css.map": "./static/css/main.b06731bc.css.map",
-    "main.bea52e37.js.map": "./static/js/main.bea52e37.js.map"
+    "main.94468986.js.map": "./static/js/main.94468986.js.map"
   },
   "entrypoints": [
     "static/css/main.b06731bc.css",
-    "static/js/main.bea52e37.js"
+    "static/js/main.94468986.js"
   ]
 }
