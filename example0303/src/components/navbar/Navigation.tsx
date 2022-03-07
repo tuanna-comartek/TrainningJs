@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import BlogPage from "../../pages/blog/BlogPage";
-import HomePage from "../../pages/home/HomePage";
+// import HomePage from "../../pages/home/HomePage";
 import OtherPage1 from "../../pages/otherPage1/OtherPage1";
 import OtherPage2 from "../../pages/otherPage2/OtherPage2";
 import OtherPage3 from "../../pages/otherPage3/Other3";
@@ -69,7 +69,7 @@ const Navigation = () => {
           </div>
         </nav>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<OtherPage4 />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route
             path="/other1"
