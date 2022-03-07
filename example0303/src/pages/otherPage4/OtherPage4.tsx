@@ -54,21 +54,21 @@ function OtherPage4() {
     newTasks.splice(index, 1);
     setTasks(newTasks);
   };
-  const handleTaskDone = () => {
-    const newTasks = tasks.filter((task: ITask) => {
-      task.status = true;
-      return tasks;
-    });
-    setTasks(newTasks);
-    console.log(tasks);
-  };
-  const handleTaskNotDone = () => {
-    const newTasks = tasks.filter((task: ITask) => {
-      task.status = false;
-      return tasks;
-    });
-    setTasks(newTasks);
-  };
+  // const handleTaskDone = () => {
+  //   const newTasks = tasks.filter((task: ITask) => {
+  //     task.status = true;
+  //     return tasks;
+  //   });
+  //   setTasks(newTasks);
+  //   console.log(tasks);
+  // };
+  // const handleTaskNotDone = () => {
+  //   const newTasks = tasks.filter((task: ITask) => {
+  //     task.status = false;
+  //     return tasks;
+  //   });
+  //   setTasks(newTasks);
+  // };
   return (
     <>
       <div className="container section-todo">
