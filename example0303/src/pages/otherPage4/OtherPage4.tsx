@@ -8,6 +8,7 @@ interface ITask {
 
 function OtherPage4() {
   const [newTask, setNewTask] = useState<string>("");
+  const [isEdit, setIsEdit] = useState(true);
   const [tasks, setTasks] = useState<ITask[]>([
     {
       name: "an thit cho",
@@ -36,6 +37,7 @@ function OtherPage4() {
     }
     setNewTask("");
     taskInput.current?.focus();
+    console.log(tasks);
   };
 
   const addTask = (name: string) => {
@@ -54,18 +56,24 @@ function OtherPage4() {
     newTasks.splice(index, 1);
     setTasks(newTasks);
   };
+  const handleEdit = (index: number): void => {
+    const abc = tasks[index];
+    console.log(abc);
+    setNewTask(abc.name);
+    setIsEdit(false);
+    // console.log(tasks);
+    // setTasks(tasks);
+  };
   // const handleTaskDone = () => {
   //   const newTasks = tasks.filter((task: ITask) => {
-  //     task.status = true;
-  //     return tasks;
+  //     return task.status == true;
   //   });
   //   setTasks(newTasks);
   //   console.log(tasks);
   // };
   // const handleTaskNotDone = () => {
   //   const newTasks = tasks.filter((task: ITask) => {
-  //     task.status = false;
-  //     return tasks;
+  //     return task.status == false;
   //   });
   //   setTasks(newTasks);
   // };
@@ -130,33 +138,80 @@ function OtherPage4() {
             </form>
             {/* <button onClick={handleTaskDone}> done</button> */}
           </div>
-
-          {tasks.map((task: ITask, index: number) => (
-            <div className="item" key={index} style={{ display: "flex" }}>
-              <h4
-                style={{
-                  textDecoration: task.status ? "line-through" : "none",
-                }}
-                className="content-task"
-              >
-                {task.name}
-              </h4>
-              <div className="btn-btn">
-                <button
-                  onClick={() => toggleDoneTask(index)}
-                  style={{ backgroundColor: "green" }}
+          {isEdit === true ? (
+            tasks.map((task: ITask, index: number) => (
+              <div className="item" key={index} style={{ display: "flex" }}>
+                <h4
+                  style={{
+                    textDecoration: task.status ? "line-through" : "none",
+                  }}
+                  className="content-task"
                 >
-                  ✔
-                </button>
-                <button
-                  onClick={() => handleDelete(index)}
-                  style={{ backgroundColor: "red" }}
-                >
-                  ✘
-                </button>
+                  {task.name}
+                </h4>
+                <div className="btn-btn">
+                  <button
+                    onClick={() => toggleDoneTask(index)}
+                    style={{ backgroundColor: "green" }}
+                  >
+                    ✔
+                  </button>
+                  <button
+                    onClick={() => handleEdit(index)}
+                    style={{ backgroundColor: "pink" }}
+                  >
+                    ✔
+                  </button>
+                  <button
+                    onClick={() => handleDelete(index)}
+                    style={{ backgroundColor: "red" }}
+                  >
+                    ✘
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <form
+              className="form"
+              style={{
+                width: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+              }}
+              onSubmit={handleSubmit}
+            >
+              <input
+                placeholder="Enter your task ......"
+                style={{
+                  width: "51%",
+                  height: 40,
+                  border: "none",
+                  borderRadius: 5,
+                }}
+                type="text"
+                onChange={(event) => setNewTask(event.target.value)}
+                value={newTask}
+                autoFocus
+                ref={taskInput}
+              />
+              <button
+                // onClick={handleSubmit}
+                style={{
+                  width: "4%",
+                  height: 30,
+                  border: "none",
+                  borderRadius: 5,
+                  backgroundColor: "red",
+                  marginLeft: -35,
+                  color: "#fff",
+                }}
+              >
+                +
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </>
