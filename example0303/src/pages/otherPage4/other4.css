@@ -30,18 +30,18 @@
 }
 
 .section-todo .section-todo-content .item .content-task {
-  width: 90%;
+  width: 80%;
   padding-left: 10px;
 }
 
 .section-todo .section-todo-content .item .btn-btn {
   height: 100%;
-  width: 10%;
+  width: 20%;
 }
 
 .section-todo .section-todo-content .item .btn-btn button {
   height: 100%;
-  width: 50%;
+  width: 33.333333%;
   border: 0;
 }
 /*# sourceMappingURL=other4.css.map */
