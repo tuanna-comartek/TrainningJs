@@ -24,34 +24,34 @@ const Todo = (props: any) => {
   }
 
   return todos.map((todo: any, index: number) => (
-    <div className="todo-contents">
-      <div
-        className={todo.status ? "todo-row complete" : "todo-row"}
-        key={index}
-      >
-        <h5 key={todo.id}>{todo.text}</h5>
+    <div className="col-12 col-md-6 col-lg-4 item-todo">
+      <div key={index} className="todo-row">
+        <h5 className={todo.status ? "complete" : ""} key={todo.id}>
+          {todo.text}
+        </h5>
         <div className="icons">
           <div
+            onClick={() => completeTodo(todo.id)}
             className="item-icon"
-            style={{ backgroundColor: "rgb(153 165 159)" }}
+            style={{ backgroundColor: "rgb(24 111 124)", color: "#fff" }}
           >
-            <IoMdDoneAll
-              onClick={() => completeTodo(todo.id)}
-              className="icon"
-            />
+            <span>Active</span>
+            <IoMdDoneAll className="icon" />
           </div>
           <div
             onClick={() => setEdit({ id: todo.id, value: todo.text })}
             className="item-icon"
-            style={{ backgroundColor: "#26de81" }}
+            style={{ backgroundColor: "rgb(24 111 124)", color: "#fff" }}
           >
+            <span>Edit</span>
             <FaEdit className="icon" />
           </div>
           <div
             onClick={() => removeTodo(todo.id)}
             className="item-icon"
-            style={{ backgroundColor: "#fc5c65" }}
+            style={{ backgroundColor: "rgb(24 111 124)", color: "#fff" }}
           >
+            <span>Delete</span>
             <AiOutlineDelete className="icon" />
           </div>
         </div>
