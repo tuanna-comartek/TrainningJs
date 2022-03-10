@@ -33,7 +33,10 @@ const LoginPage = () => {
   };
   return (
     <>
-      <div className="container-fluid section-login ">
+      <div
+        className="container-fluid section-login "
+        style={{ overflow: "hidden" }}
+      >
         <div className="row area">
           <div className=" col-lg-7 content-left">
             <div className="content-left-contents">
