@@ -25,7 +25,6 @@ function TodoForm(props: any) {
     handleFilter();
   }, []);
   const handleFilter = () => {
-    console.log("sagdjagsdj");
     switch (itemSelect) {
       case "completed":
         setFilterTodo(filterTodo.filter((td: ITask) => td.status));
@@ -48,26 +47,28 @@ function TodoForm(props: any) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="todo-form"
+      className="todo-form-update"
       style={{ paddingBottom: "20px" }}
     >
       {props.edit ? (
         <>
-          <input
-            placeholder="Update your item"
-            value={input}
-            onChange={handleChange}
-            name="text"
-            ref={inputRef}
-            className="todo-input edit"
-            style={{ width: 500, height: 34 }}
-          />
-          <div
-            className="todo-button"
-            onClick={handleSubmit}
-            style={{ backgroundColor: "#fa8231" }}
-          >
-            <MdOutlineUpdate className="icon" style={{ color: "#fff" }} />
+          <div className="Update-form">
+            <input
+              placeholder="Update your item"
+              value={input}
+              onChange={handleChange}
+              name="text"
+              ref={inputRef}
+              className="todo-input edit"
+              style={{ width: 346, height: 36, marginRight: 8 }}
+            />
+            <div
+              className="todo-button"
+              onClick={handleSubmit}
+              style={{ backgroundColor: "rgb(24 111 124)" }}
+            >
+              <MdOutlineUpdate className="icon" style={{ color: "#fff" }} />
+            </div>
           </div>
         </>
       ) : (
@@ -83,12 +84,12 @@ function TodoForm(props: any) {
               name="text"
               className="todo-input"
               ref={inputRef}
-              style={{ height: 35 }}
+              style={{ height: 35, borderRadius: 7, border: "none" }}
             />
             <div
               className="todo-button"
               onClick={handleSubmit}
-              style={{ backgroundColor: "#fa8231" }}
+              style={{ backgroundColor: "rgb(46 85 118)" }}
             >
               <AiOutlinePlus className="icon" />
             </div>
@@ -96,7 +97,7 @@ function TodoForm(props: any) {
           <div style={{ height: 35 }}>
             <select
               value={itemSelect}
-              style={{ height: "100%" }}
+              style={{ height: "100%", borderRadius: 7, border: "none" }}
               onChange={onChangeSelect}
             >
               <option

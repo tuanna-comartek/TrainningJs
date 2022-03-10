@@ -8,7 +8,23 @@ export interface ITask {
   status: boolean;
 }
 function TodoList() {
-  const [todos, setTodos] = useState<ITask[]>([]);
+  const [todos, setTodos] = useState<ITask[]>([
+    {
+      id: 3,
+      text: "Thịt cho nấu rượu mận ",
+      status: false,
+    },
+    {
+      id: 4,
+      text: "Dồi cho nướng than hoa",
+      status: false,
+    },
+    {
+      id: 6,
+      text: "Ba chỉ chó nướng lá na",
+      status: true,
+    },
+  ]);
 
   const addTodo = (todo: ITask) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
@@ -49,17 +65,25 @@ function TodoList() {
 
   return (
     <>
-      <div className="container section-todos">
-        <h1 style={{ color: "#fff", paddingBottom: 40, fontSize: "65px" }}>
-          To-do List
-        </h1>
-        <TodoForm onSubmit={addTodo} />
-        <Todo
-          todos={todos}
-          completeTodo={completeTodo}
-          removeTodo={removeTodo}
-          updateTodo={updateTodo}
-        />
+      <div style={{ backgroundColor: "#1f1b3a" }}>
+        <div style={{ paddingTop: 50, paddingBottom: 50 }}>
+          <div className="container section-todos">
+            <h1 style={{ color: "#fff", paddingBottom: 40, fontSize: "65px" }}>
+              To-do List
+            </h1>
+            <div className="section-form">
+              <TodoForm onSubmit={addTodo} />
+            </div>
+            <div className="row section-contents" style={{ width: "100%" }}>
+              <Todo
+                todos={todos}
+                completeTodo={completeTodo}
+                removeTodo={removeTodo}
+                updateTodo={updateTodo}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

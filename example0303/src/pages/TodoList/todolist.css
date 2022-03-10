@@ -2,8 +2,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(54, 207, 205, 0.733)), to(#17c0eb));
-  background-image: linear-gradient(0deg, rgba(54, 207, 205, 0.733), #17c0eb);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(54, 207, 205, 0.733)), to(#082026));
+  background-image: linear-gradient(0deg, rgba(54, 207, 205, 0.733), #082026);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,79 +14,97 @@
   min-height: 100vh;
   padding-top: 60px;
   width: 100%;
+  border-radius: 15px;
 }
 
 .section-todos h1 {
   text-align: center;
+  font-family: cursive;
 }
 
-.section-todos .todo-contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 800px;
-  height: 40px;
+.section-todos .section-form {
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.section-todos .section-contents .item-todo {
+  padding-bottom: 20px;
+}
+
+.section-todos .section-contents .item-todo .todo-row {
   background-color: #fff;
-  margin-bottom: 20px;
+  height: 90px;
+  border-radius: 8px;
+  border-bottom: 1px solid #464545;
+  border-left: 1px solid #464545;
+}
+
+.section-todos .section-contents .item-todo .todo-row .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px;
+}
+
+.section-todos .section-contents .item-todo .todo-row .icons .item-icon {
   border-radius: 5px;
-}
-
-.section-todos .todo-contents .complete h5 {
-  text-decoration: line-through;
-  opacity: 0.4;
-}
-
-.section-todos .todo-contents .todo-row {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.section-todos .todo-contents .todo-row h5 {
-  width: 80%;
-  line-height: 40px;
-  padding-left: 20px;
-}
-
-.section-todos .todo-contents .todo-row .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 20%;
-}
-
-.section-todos .todo-contents .todo-row .icons .item-icon {
-  width: 33.3333333333%;
-  height: 40px;
+  width: 80px;
+  height: 30px;
   cursor: pointer;
 }
 
-.section-todos .todo-contents .todo-row .icons .item-icon .icon {
-  color: #fff;
-  margin-left: 19px;
-  margin-top: 11px;
+.section-todos .section-contents .item-todo .todo-row .icons .item-icon span {
+  padding-left: 7px;
+  padding-right: 5px;
+  line-height: 30px;
 }
 
-.section-todos .todo-form {
+.section-todos .section-contents .item-todo .todo-row .icons .item-icon .icon {
+  padding-bottom: 3px;
+}
+
+.section-todos .section-contents .item-todo .todo-row h5 {
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: cursive;
+}
+
+.section-todos .section-contents .item-todo .complete {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
+.section-todos .todo-form-update {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.section-todos .todo-form .todo-button {
-  background-color: #fa8231;
+.section-todos .todo-form-update .todo-button {
   width: 20px;
   height: 20px;
-  margin-left: -28px;
-  margin-top: 7px;
+  margin-left: -30px;
+  margin-top: 8px;
   border-radius: 3px;
 }
 
-.section-todos .todo-form .todo-button .icon {
+.section-todos .todo-form-update .todo-button .icon {
   color: #fff;
   margin-bottom: 8px;
   margin-left: 2px;
+}
+
+.section-todos .todo-form-update .Update-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=todolist.css.map */

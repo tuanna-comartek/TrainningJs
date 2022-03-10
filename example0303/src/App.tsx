@@ -1,9 +1,10 @@
-import Navigation from "./components/navbar/Navigation";
+import AppRouter from "./components/common/AppRoute";
+// import Navigation from "./components/navbar/Navigation";
 
 function App() {
   return (
     <>
-      <Navigation />
+      <AppRouter />
     </>
   );
 }

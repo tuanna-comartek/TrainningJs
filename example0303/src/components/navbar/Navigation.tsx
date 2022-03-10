@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import BlogPage from "../../pages/blog/BlogPage";
 import HomePage from "../../pages/home/HomePage";
 import OtherPage1 from "../../pages/otherPage1/OtherPage1";
@@ -9,7 +9,7 @@ import TodoList from "../../pages/TodoList/TodoList";
 const Navigation = () => {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <nav className="navbar navbar-expand-lg navbar-light bg-light my-navbar">
           <div className="container-fluid my-navbar-content">
             <div className="navbar-brand content-left">
@@ -68,25 +68,32 @@ const Navigation = () => {
             </div>
           </div>
         </nav>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route
-            path="/other1"
-            element={
-              <OtherPage1
-                name="Nguyen Anh Tuan"
-                address="Viet Nam"
-                phoneNumber={+84869794311}
-                email="abc@gmail.com"
-              />
-            }
-          />
-          <Route path="/other2" element={<OtherPage2 />} />
-          <Route path="/other3" element={<OtherPage3 />} />
-          <Route path="/other4" element={<TodoList />} />
-        </Routes>
-      </BrowserRouter>
+        <Switch>
+          <Route path="/">
+            <TodoList />
+          </Route>
+          <Route path="/blog">
+            <BlogPage />
+          </Route>
+          <Route path="/other1">
+            <OtherPage1
+              name="Nguyen Anh Tuan"
+              address="Viet Nam"
+              phoneNumber={+84869794311}
+              email="abc@gmail.com"
+            />
+          </Route>
+          <Route path="/other2">
+            <OtherPage2 />
+          </Route>
+          <Route path="/other3">
+            <OtherPage3 />
+          </Route>
+          <Route path="/other4">
+            <TodoList />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 };
